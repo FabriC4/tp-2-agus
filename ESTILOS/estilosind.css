@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ddbd;
+    color: #4c4030;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    border-bottom: solid 5px #d2ab6f;
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 20%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+nav {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+
+.nav_menu {
+    display: none;
+    background-color: rgb(201, 154, 100);
+}
+
+.open-menu {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    background: #d2ab6f;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+#nav_responsivo {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    right: 0;
+    z-index: 10;
+}
+
+#nav_responsivo span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px auto;
+}
+
+/* Carrusel */
+.carrusel {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.carrusel_contenido {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.producto_item {
+    flex: 0 0 100%;
+    padding: 20px;
+}
+
+.producto_item img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #d2ab6f;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c89969;
+}
+
+/* Footer */
+footer {
+    background-color: #b8a17e;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 1025px) {
+    .producto_item {
+        flex: 0 0 25%; /* 4 productos visibles en pantallas grandes */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .producto_item {
+        flex: 0 0 33.33%; /* 3 productos visibles en pantallas medianas */
+    }
+}
+
+@media (max-width: 599px) {
+    .producto_item {
+        flex: 0 0 100%; /* 1 producto visible en pantallas pequeñas */
+    }
+}

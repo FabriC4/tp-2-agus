@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La Fournier</title>
+    <link rel="stylesheet" href="ESTILOS/estilospedidos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="IMAGENES/index/LAFOURNIER.jpeg" alt="La Fournier Logo">
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <ul>
+            <li class="menu_chiquito"><a href="index.html">INICIO</a></li>
+            <li class="menu_chiquito"><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="menu_chiquito"><a href="precio.html">PRECIOS</a></li>
+            <li class="menu_chiquito"><a href="eventos.html">EVENTOS</a></li>
+            <li class="menu_chiquito"><a href="pedidos.html">PEDIDOS</a></li>
+            <li class="max_menu"><a href="recuerdos.html">DEJA TU RECUERDO CON NOSOTROS</a></li>
+        </ul>
+    </nav>
+    &nbsp
+
+    <h1>HACE TU PEDIDO</h1>
+
+    <main>
+        <form action="procesar_compra.html" method="POST">
+            <div>
+                <label for="nombre">Nombre del Cliente:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="pago">Medio de Pago:</label>
+                <select id="pago" name="pago">
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="mercado pago">Mercado Pago</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+            </div>
+            <div>
+                <label for="productos">Productos:</label>
+                <textarea id="productos" name="productos" rows="4" readonly></textarea>
+            </div>
+            <button type="submit">Completar Compra</button>
+        </form>
+    </main>
+
+    <footer class="eslogan">
+        ¿Dulce o Salado?
+    </footer>
+</body>
+</html>

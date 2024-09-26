@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ddbd;
+}
+h1 {
+    color: rgb(94, 84, 69);
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(80, 67, 48);
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+p {
+    color: rgb(63, 59, 41);
+    font-family:fantasy;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    color: rgb(116, 93, 64);
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+header img {
+    width: 20%;
+    height: auto;
+}
+
+/* MI NAV*/
+nav {
+    width: 100%;
+    float: left;
+    font-family: fantasy;
+    background-color: rgb(194, 144, 88);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(201, 154, 100);
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color:  rgb(214, 175, 131);
+}
+
+/* MI MENU */
+.menu_chiquito {
+    width: 15%;
+}
+
+.maxmenu {
+    width: 35%;
+}
+
+li:hover {
+    background-color: rgb(219, 193, 121);
+    color: rgb(0, 0, 0);
+}
+
+
+/* Footer */
+footer {
+    background-color: #b8a17e; 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.eslogan {
+    color: rgb(68, 53, 34); 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed;
+    width: 100%; 
+    bottom: 0;
+    font-size: 14px;
+    font-family: fantasy; 
+}
+
+/*--------------------------------*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #9986528e; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    color: rgb(63, 59, 41);
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgb(63, 59, 41);
+    background-color: #f9f9f9; /* Fondo claro para los campos de entrada */
+}
+
+textarea {
+    resize: vertical; /* Permitir redimensionar verticalmente */
+}
+
+button {
+    padding: 12px;
+    background-color: #554b39;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #543261;
+}
